@@ -1,7 +1,21 @@
 package com.stackqueue;
 
 public class MyStack {
-    public static void main(String[] args){
-        System.out.println("Welcome to Stack and Queue code");
+    private MyLinkedList myLinkedList;
+
+    public MyStack() {
+        this.myLinkedList = new MyLinkedList();
+    }
+
+    public void push(INode myNode) {
+        myLinkedList.add(myNode);
+    }
+
+    public void printStack() {
+        myLinkedList.printMyNodes();
+    }
+
+    public INode peak() {
+        return myLinkedList.head;
     }
 }
