@@ -22,4 +22,8 @@ public class MyQueue {
     public INode pop() {
         return myLinkedList.popLast();
     }
+
+    public INode dequeue() {
+            return myLinkedList.popLast();
+        }
 }
