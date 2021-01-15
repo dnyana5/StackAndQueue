@@ -23,7 +23,8 @@ public class MyQueue {
         return myLinkedList.popLast();
     }
 
+
     public INode dequeue() {
-            return myLinkedList.popLast();
-        }
+        return myLinkedList.popLast();
+    }
 }
